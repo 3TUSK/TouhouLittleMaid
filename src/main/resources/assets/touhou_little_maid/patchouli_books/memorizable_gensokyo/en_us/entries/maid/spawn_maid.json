@@ -6,11 +6,11 @@
   "pages": [
     {
       "type": "text",
-      "text": "The way to get a maid is very special and needs to be done through a multi-blocks altar.$(br2)Since the recipe is likely to change in the future, please check the JEI altar label.$(br2)After the maid is successfully spawned in a multi-blocks altar, you will get a cake box wrapped with the maid. You can right-click the cake box to open it."
+      "text": "To spawn a maid, you will conduct a special ritual in the multiblock altar. $(br2)As the details may change in future, please refer to JEI for details of the ritual. $(br2)Upon success of maid spawning, you will get a cake box wrapping your maid instead."
     },
     {
       "type": "text",
-      "text": "You need to right-click three times to trigger different opening stages, and finally the cake box will disappear.$(br2)You will need a cake to tame the maid. the taming items can be changed in the configuration file, which was mentioned already.$(br2)The tamed maid is almost identical to a vanilla pet, and you can right-click to open her GUI."
+      "text": "Opening this box is a bit complex; you need to right-click it three times to actually open it. $(br2) Once you spawn a maid, you will have to use a piece of cake to tame her (?) (just as taming other vanilla animals). You may change the taming item in config file. Right-clicking a tamed maid will open the Maid GUI."
     }
   ]
 }

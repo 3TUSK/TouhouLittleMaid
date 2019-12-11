@@ -7,10 +7,11 @@
     {
       "type": "spotlight",
       "item": "touhou_little_maid:maid_beacon",
-      "text": "The shrine lamp is a good decoration and has certain practical functions. Right click on the upper part of the shrine lamp to open the GUI, store the player's power point."
-    }, {
+      "text": "Shrine Lamp is a decent decorative light source. Additionally, the upper half of lamp can store Power Item from player; you can right-click the upper half of lamp to open its GUI, where you can insert or extract Power."
+    },
+    {
       "type": "text",
-      "text": "It also can select effect, then will consume power points to bring the effect to the surrounding range of maids.$(br2)The shrine lamp is also a good tool for automatically collecting power point. It can automatically collect power point within 3 blocks and store them."
+      "text": "You can also specify a buff effect for the lamp; the lamp will then consume Power Point to apply those effects on surrounding maids. $(br2)Shrine Lamp can also auto-collect and store Power Items on the ground within its 3-block radius."
     }
   ]
 }
