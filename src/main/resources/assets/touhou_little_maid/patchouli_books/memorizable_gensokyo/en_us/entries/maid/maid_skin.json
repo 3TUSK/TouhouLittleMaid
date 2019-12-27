@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "text",
-      "text": "You can easily customize maids' skin in-game. On top of that, you may install 3rd party skin packs to provide more skin choices."
+      "text": "You can easily customize maids' skin in-game. On top of that, you may install third-party skin packs to provide more skin choices."
     }, {
       "type": "image",
       "images": [
@@ -16,7 +16,7 @@
       "border": true
     }, {
       "type": "text",
-      "text": "You can create your own skin packs (in form of Minecraft resource pack) using $(l:https://blockbench.net/)Blockbench$(/l). $(br2)Models used for maids are fully compatible with Entity Models format used in Minecraft 1.10.0 (Bedrock Edition). $(br2) Refer to $(l:https://github.com/TartaricAcid/TouhouLittleMaid/wiki/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%A5%B3%E4%BB%86%E6%A8%A1%E5%9E%8B%E8%AF%B4%E6%98%8E)the wiki$() for more infomrmation of skin customization."
+      "text": "You can create your own skin packs (in the form of Minecraft resource packs) using $(l:https://blockbench.net/)Blockbench$(/l). $(br2)Models used for maids are fully compatible with the Entity Models format used in Minecraft Bedrock Edition 1.10.0. $(br2) Refer to $(l:https://github.com/TartaricAcid/TouhouLittleMaid/wiki/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%A5%B3%E4%BB%86%E6%A8%A1%E5%9E%8B%E8%AF%B4%E6%98%8E)the wiki$() for more infomrmation of skin customization."
     }
   ]
 }

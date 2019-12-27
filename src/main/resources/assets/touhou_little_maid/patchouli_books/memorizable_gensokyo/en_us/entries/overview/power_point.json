@@ -10,7 +10,7 @@
     },
     {
       "type": "text",
-      "text": "When you holds the $(l:overview/gohei_and_danmaku)Gohei$(), you can see your Power at the top-left of the game screen. $(br2)The maximum Power is 5, and collecting more Power Item after this point will have no effect."
+      "text": "When you hold the $(l:overview/gohei_and_danmaku)Gohei$(), you can see your Power at the top-left of the game screen. $(br2)The maximum Power is 5, and collecting more Power Item after this point will have no effect."
     },
     {
       "type": "image",

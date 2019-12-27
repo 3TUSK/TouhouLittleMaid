@@ -6,10 +6,10 @@
   "pages": [
     {
       "type": "text",
-      "text": "The 3rd tab from left in Maid GUI is Maid Bauble Inventory. The mod provides several maid baubles that can protect maids to a certain extent: $(li)Ultramarine Orb Elixir: similar to Totem of Undying, it will prevent Maid from death for up to 6 times. $(li)Bauble of Tomb: Generate a tomb in-place that contains all items dropped by the maid upon death. "
+      "text": "The third tab in the Maid GUI is Maid Bauble Inventory. The mod provides several maid baubles that can protect your maids: $(li)Ultramarine Orb Elixir: similar to the Totem of Undying, it will prevent the maid from dying up to 6 times. $(li)Bauble of Tomb: When the maid dies, generates a tomb that contains all items dropped by the maid. "
     }, {
       "type": "text",
-      "text": "$(li)Bauble of Protection/Resistence (?): cancel all damages received by maids bearing this bauble."
+      "text": "$(li)Bauble of Protection: Makes the maid immune to all damage."
     }
   ]
 }

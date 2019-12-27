@@ -6,17 +6,17 @@
   "pages": [
     {
       "type": "text",
-      "text": "The Altar is a multiblock structure used for crafting. You can view its structure in JEI. Forming Altar requires player to have $(l:overview/power_point)Power$()."
+      "text": "The Altar is a multiblock structure used for crafting. You can view its structure in JEI. Forming an Altar requires the player to have $(l:overview/power_point)Power$()."
     },
     {
       "type": "multiblock",
       "name": "Altar",
       "multiblock_id": "touhou_little_maid:altar",
-      "text": "Use $(l:overview/gohei_and_danmaku)Gohei$() on the front side of the red wool at the left of the 4th level will complete the creation."
+      "text": "Use the $(l:overview/gohei_and_danmaku)Gohei$() on the front side of the red wool at the left of the 4th level will complete the creation."
     },
     {
       "type": "text",
-      "text": "You can place items in the altar by right-clicking on the top of those oak pillars. To remove items, right-click those pillars with empty hand instead. $(br2)When all items are in place and player has enough Power, the crafting will begin. $(br2) Insufficient Power will cause the crafing to pause; once you have enough Power, the process can be resumed by right-clicking again."
+      "text": "You can place items in the altar by right-clicking on the top of the oak pillars. To remove items, right-click those pillars with empty hand instead. $(br2)When all items are in place and the player has enough Power, crafting will begin. $(br2) Insufficient Power will cause the crafting to pause; once you have enough Power, the process can be resumed by right-clicking again."
     },
     {
       "type": "image",

@@ -8,11 +8,11 @@
       "type": "spotlight",
       "item": "touhou_little_maid:hakurei_gohei",
       "link_recipe": true,
-      "text": "Gohei is a meele weapon that can also launch range AoE attacks with bullet hell (danmaku). $(br2)To select a different style of danmaku, hold alt key while scrolling mousewheel."
+      "text": "Gohei is a melee weapon that can also launch ranged AoE attacks with danmaku. $(br2)To switch to a different style of danmaku, scroll the mouse whell while holding ALT."
     }, {
       "type": "crafting",
       "recipe": "touhou_little_maid:hakurei_gohei",
-      "text": "The higher player's Power is, the more damage Gohei deals.$(br2)Also used in the creation of The Altar."
+      "text": "The higher the player's Power is, the more damage the Gohei deals.$(br2)Also used in the creation of The Altar."
     },
     {
       "type": "image",

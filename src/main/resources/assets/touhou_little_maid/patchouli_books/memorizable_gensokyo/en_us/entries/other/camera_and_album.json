@@ -7,11 +7,11 @@
     {
       "type": "spotlight",
       "item": "touhou_little_maid:camera",
-      "text": "It can be tricky to bring maids with you while traveling far or crossing different dimension. Introduce Aya's Camera, which is a simple solution to this problem. $(br2)Take a photo of your maid using this camera will \"seal\" your maid into that photo; you can release your maid from photo by rightclicking on desired positon."
+      "text": "It can be tricky to bring maids with you while traveling long distances or through different dimensions. Enter Aya's Camera, which is a simple solution to this problem. $(br2)Taking a photo of your maid using this camera will \"seal\" your maid into that photo; you can release your maid from the photo by right-clicking at the desired destination."
     }, {
       "type": "spotlight",
       "item": "touhou_little_maid:album",
-      "text": "If you have an Album with you, newly taken picture will directly go into the Album. Rightclicking the album will release maids (on a first in first out basis?)."
+      "text": "If you have an Album with you, newly taken pictures will be added directly into the Album. Right-clicking the album will release the maids on a first in first out basis."
     }
   ]
 }

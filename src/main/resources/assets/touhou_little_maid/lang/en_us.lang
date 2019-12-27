@@ -90,14 +90,14 @@ message.touhou_little_maid.grid.input.false=IO Mode: Output
 message.touhou_little_maid.grid.blacklist.true=Filter Mode: Blacklist
 message.touhou_little_maid.grid.blacklist.false=Filter Mode: Whitelist
 message.touhou_little_maid.photo.not_suitable_for_place_maid=This damnable place can't place the maid.
-message.touhou_little_maid.photo.have_no_nbt_data=This damnable photo don't have NBT data.
+message.touhou_little_maid.photo.have_no_nbt_data=This damnable photo doesn't have NBT data.
 message.touhou_little_maid.altar.not_enough_power=You don't have enough power.
 message.touhou_little_maid.tombstone.place_fail=Tombstone Place Fail!
 message.touhou_little_maid.tombstone.on_block_activated=Tombstone Has Been Taken Back!
 message.touhou_little_maid.missing_patchouli=[{"text":"[Touhou Little Maid] ","color":"green","bold":true},{"text":"Click Here","color":"gold","underlined":true,"bold":false,"clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/mc-mods/patchouli"},"hoverEvent":{"action":"show_text","value":"https://www.curseforge.com/minecraft/mc-mods/patchouli"}},{"text":" To Install Patchouli Mod To Get The Manual","color":"yellow","bold":false}]
-message.touhou_little_maid.broom.message=Only creative mode player can ride it, but you can disable it by modifying the configuration.
+message.touhou_little_maid.broom.message=Only creative mode players can ride brooms, but you can disable this restriction by modifying the configuration.
 message.touhou_little_maid.debug_danmaku.type=Current Type: %s
-message.touhou_little_maid.owner_maid_num.can_not_add=You can no longer tame maids, you have reached the limit (%d/%d)
+message.touhou_little_maid.owner_maid_num.can_not_add=You have reached the limit for tamed maids (%d/%d).
 message.touhou_little_maid.change_model.disabled=Skin switch is disabled.
 message.touhou_little_maid.npc_maid_tool.not_maid_model=Please set this NPC model as maid model.
 
@@ -157,7 +157,7 @@ danmaku_type.touhou_little_maid.kunai=Kunai
 danmaku_type.touhou_little_maid.raindrop=Rain Drop
 danmaku_type.touhou_little_maid.arrowhead=Arrow Head
 danmaku_type.touhou_little_maid.butterfly=Butterfly
-danmaku_type.touhou_little_maid.glowey_ball=Glowey Ball
+danmaku_type.touhou_little_maid.glowey_ball=Glowing Orb
 
 # Task
 task.touhou_little_maid.idle=Idle
@@ -184,11 +184,11 @@ gui.touhou_little_maid.tab.main=Main
 gui.touhou_little_maid.tab.inventory=Inventory
 gui.touhou_little_maid.tab.bauble=Bauble
 gui.touhou_little_maid.tab.skill=Skill (WIP)
-gui.touhou_little_maid.button.pickup.true=Pick Mode Is Enable.
-gui.touhou_little_maid.button.pickup.false=Pick Mode Is Disable.
-gui.touhou_little_maid.button.pickup.desc=Click this button to set whether the maid takes the initiative to pick up the entity item.
-gui.touhou_little_maid.button.home.true=Home Mode Is Enable.
-gui.touhou_little_maid.button.home.false=Home Mode Is Disable.
+gui.touhou_little_maid.button.pickup.true=Pick Mode is Enabled.
+gui.touhou_little_maid.button.pickup.false=Pick Mode is Disabled.
+gui.touhou_little_maid.button.pickup.desc=Click this button to set whether the maid takes initiative to pick up entity items.
+gui.touhou_little_maid.button.home.true=Home Mode is Enabled.
+gui.touhou_little_maid.button.home.false=Home Mode is Disabled.
 gui.touhou_little_maid.button.home.desc=Click this button to set whether the maid will follow the player.
 gui.touhou_little_maid.button.skin=Change Skin
 gui.touhou_little_maid.button.hata_sasimono=Change Hata Sasimono
@@ -230,7 +230,7 @@ gui.touhou_little_maid.maid_beacon.min_all=Take All
 # Skin Gui
 gui.touhou_little_maid.skin.text.version=Version: %s
 gui.touhou_little_maid.skin.text.date=Date: %s
-gui.touhou_little_maid.skin.tooltips.show_details=Shift Click To Open The Details GUI
+gui.touhou_little_maid.skin.tooltips.show_details=Shift click to open the details GUI
 
 # Model Pack
 pack.touhou_little_maid.maid.name=Touhou Project Model
@@ -347,7 +347,7 @@ model.touhou_little_maid.alice_margatroid.desc=§7Seven-Colored Puppeteer
 model.touhou_little_maid.alice.desc=§7Girl of Death
 model.touhou_little_maid.patchouli_knowledge.desc=§7The Unmoving Great Library
 model.touhou_little_maid.hong_meiling.desc=§7Chinese Girl
-model.touhou_little_maid.koakuma.desc=§7？？？
+model.touhou_little_maid.koakuma.desc=§7???
 model.touhou_little_maid.letty_whiterock.desc=§7What Winter Left Behind
 model.touhou_little_maid.lunasa_prismriver.desc=§7Poltergeist Violinist
 model.touhou_little_maid.merlin_prismriver.desc=§7Poltergeist Trumpeter
@@ -475,4 +475,4 @@ jei.touhou_little_maid.altar_craft.spawn_light_bolt.result=Spawn Light Bolt
 
 # Patchouli
 patchouli.touhou_little_maid.book.name=Memorizable Gensokyo
-patchouli.touhou_little_maid.book.landing_text=This is a mod about maids and $(italic)Touhou Project$(). $(br2)Thanks to Snownee for help in coding. $(br)Thanks to Succinum, ZeniCrow, Paulzzh, Tian_mi and other artists for producing excellent models and textures. $(br)Thanks to Verclene, the author of little maid mob mod.
+patchouli.touhou_little_maid.book.landing_text=This is a mod about maids and the $(italic)Touhou Project$(). $(br2)Thanks to Snownee for help in coding. $(br)Thanks to Succinum, ZeniCrow, Paulzzh, Tian_mi and other artists for producing excellent models and textures. $(br)Thanks to Verclene, the author of little maid mob mod.

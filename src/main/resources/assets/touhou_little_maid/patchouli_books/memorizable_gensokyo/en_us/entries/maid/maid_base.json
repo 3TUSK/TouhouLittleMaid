@@ -6,15 +6,15 @@
   "pages": [
     {
       "type": "text",
-      "text": "Maids are capable to do a lot of things; here is a (unexhausive) list of them: $(li)By default, maids will find and pick up items, arrows and exp orbs on the nearby ground. You can adjust this behavior in the Maid GUI. $(li) By default, maids always follow owner (master?)."
+      "text": "Maids are capable of doing a lot of things; here is a (inexhaustive) list of them: $(li)By default, maids will find and pick up nearby items, arrows and xp orbs. You can adjust this behavior in the Maid GUI. $(li) By default, maids will follow their owner (master?)."
     },
     {
       "type": "text",
-      "text": "$(li)Right-clicking maids with empty hand while pressing Shift will put maids in Sitting Mode. In this mode, maids will do nothing, even dodging attacks. $(li)Right-clicking maids with empty hand while pressing Shift will let maids dismount if they are riding. $(li)Right-clicking maids with potions and/or golden apples will cause maids to consume them instead."
+      "text": "$(li)Sneak-right-clicking a maid with an empty hand will put it into Sitting Mode. In this mode, maids will not do anything (they won't even dodge attacks). $(li)Sneak-right-clicking maids with an empty hand will cause them to dismount any mount they are riding. $(li)Maids will consume any potions or golden apples fed to thme using right click."
     },
     {
       "type": "text",
-      "text": "$(li)Right-clicking maids with empty bottles will let you extract exp orbs being picked up out in the form of Bottle o' Enchantment."
+      "text": "$(li)Right-clicking maids with empty bottles will fill the bottle with any experience the maid has collected from the ground, returning a Bottle o' Enchanting."
     }
   ]
 }
