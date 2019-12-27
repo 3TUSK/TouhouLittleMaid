@@ -4,6 +4,7 @@ import com.github.tartaricacid.touhoulittlemaid.TouhouLittleMaid;
 import com.github.tartaricacid.touhoulittlemaid.danmaku.CustomSpellCardEntry;
 import com.github.tartaricacid.touhoulittlemaid.init.MaidItems;
 import com.github.tartaricacid.touhoulittlemaid.proxy.ClientProxy;
+import com.github.tartaricacid.touhoulittlemaid.proxy.CommonProxy;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
@@ -13,6 +14,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -20,6 +22,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * @author TartaricAcid
@@ -35,7 +38,6 @@ public class ItemSpellCard extends Item {
     }
 
     @SuppressWarnings("all")
-    @SideOnly(Side.CLIENT)
     public static ItemStack setCustomSpellCardEntry(String id, ItemStack spellCard) {
         if (spellCard.getItem() == MaidItems.SPELL_CARD && ClientProxy.CUSTOM_SPELL_CARD_MAP_CLIENT.containsKey(id)) {
             NBTTagCompound tag;
@@ -50,8 +52,12 @@ public class ItemSpellCard extends Item {
         return spellCard;
     }
 
+    @Nullable
     @SuppressWarnings("all")
     public static CustomSpellCardEntry getCustomSpellCardEntry(ItemStack spellCard, Map<String, CustomSpellCardEntry> map) {
+        if (map.isEmpty()) {
+            return null;
+        }
         CustomSpellCardEntry defaultEntry = map.values().stream().findFirst().get();
         if (spellCard.getItem() == MaidItems.SPELL_CARD && spellCard.hasTagCompound()) {
             String id = spellCard.getTagCompound().getString(SPELL_CARD_ENTRY_TAG);
@@ -62,22 +68,33 @@ public class ItemSpellCard extends Item {
         return defaultEntry;
     }
 
-
-    @SideOnly(Side.CLIENT)
     @Override
     public void getSubItems(@Nonnull CreativeTabs tab, @Nonnull NonNullList<ItemStack> items) {
         if (this.isInCreativeTab(tab)) {
-            for (String id : ClientProxy.CUSTOM_SPELL_CARD_MAP_CLIENT.keySet()) {
+            Set<String> ids = FMLCommonHandler.instance().getSide().isClient() ? ClientProxy.CUSTOM_SPELL_CARD_MAP_CLIENT.keySet() : CommonProxy.CUSTOM_SPELL_CARD_MAP_SERVER.keySet();
+            for (String id : ids) {
                 items.add(setCustomSpellCardEntry(id, new ItemStack(this)));
             }
         }
+    }
+
+    @Override
+    public String getItemStackDisplayName(ItemStack stack) {
+        Map<String, CustomSpellCardEntry> map = FMLCommonHandler.instance().getSide().isClient() ? ClientProxy.CUSTOM_SPELL_CARD_MAP_CLIENT : CommonProxy.CUSTOM_SPELL_CARD_MAP_SERVER;
+        CustomSpellCardEntry entry = getCustomSpellCardEntry(stack, map);
+        if (entry == null) {
+            return "";
+        }
+        return TextFormatting.GOLD + net.minecraft.util.text.translation.I18n.translateToLocal(entry.getNameKey());
     }
 
     @SideOnly(Side.CLIENT)
     @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
         CustomSpellCardEntry entry = getCustomSpellCardEntry(stack, ClientProxy.CUSTOM_SPELL_CARD_MAP_CLIENT);
-        tooltip.add(TextFormatting.GOLD + I18n.format(entry.getNameKey()));
+        if (entry == null) {
+            return;
+        }
         if (!entry.getDescriptionKey().isEmpty()) {
             tooltip.add(I18n.format(entry.getDescriptionKey()));
         }

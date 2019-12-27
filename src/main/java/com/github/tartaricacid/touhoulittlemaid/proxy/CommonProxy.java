@@ -46,6 +46,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.fml.common.Loader;
@@ -212,7 +213,7 @@ public class CommonProxy {
 
     private void registerModEntity() {
         EntityRegistry.registerModEntity(new ResourceLocation(TouhouLittleMaid.MOD_ID, "entity.passive.maid"), EntityMaid.class, "touhou_little_maid.maid", 0, TouhouLittleMaid.INSTANCE, 80, 3, true, 0x4a6195, 0xffffff);
-        EntityRegistry.registerModEntity(new ResourceLocation(TouhouLittleMaid.MOD_ID, "entity.projectile.danmaku"), EntityDanmaku.class, "touhou_little_maid.danmaku", 1, TouhouLittleMaid.INSTANCE, 64, 200, true);
+        EntityRegistry.registerModEntity(new ResourceLocation(TouhouLittleMaid.MOD_ID, "entity.projectile.danmaku"), EntityDanmaku.class, "touhou_little_maid.danmaku", 1, TouhouLittleMaid.INSTANCE, 64, 20, true);
         EntityRegistry.registerModEntity(new ResourceLocation(TouhouLittleMaid.MOD_ID, "entity.item.marisa_broom"), EntityMarisaBroom.class, "touhou_little_maid.marisa_broom", 2, TouhouLittleMaid.INSTANCE, 80, 3, true);
         EntityRegistry.registerModEntity(new ResourceLocation(TouhouLittleMaid.MOD_ID, "entity.item.chair"), EntityChair.class, "touhou_little_maid.chair", 3, TouhouLittleMaid.INSTANCE, 160, 3, true);
         EntityRegistry.registerModEntity(new ResourceLocation(TouhouLittleMaid.MOD_ID, "entity.monster.rinnosuke"), EntityRinnosuke.class, "touhou_little_maid.rinnosuke", 4, TouhouLittleMaid.INSTANCE, 80, 3, true, 0x515a9b, 0x535353);
@@ -245,6 +246,9 @@ public class CommonProxy {
         INSTANCE.registerMessage(BeaconAbsorbMessage.Handler.class, BeaconAbsorbMessage.class, 14, Side.CLIENT);
         INSTANCE.registerMessage(SyncCustomSpellCardData.Handler.class, SyncCustomSpellCardData.class, 15, Side.CLIENT);
         INSTANCE.registerMessage(SyncOwnerMaidNumMessage.Handler.class, SyncOwnerMaidNumMessage.class, 16, Side.CLIENT);
+        if (isNpcModLoad()) {
+            INSTANCE.registerMessage(SendNpcMaidModelMessage.Handler.class, SendNpcMaidModelMessage.class, 17, Side.SERVER);
+        }
     }
 
     /**
@@ -252,5 +256,9 @@ public class CommonProxy {
      */
     public String translate(String key, Object... format) {
         return I18n.translateToLocalFormatted(key, format);
+    }
+
+    public static boolean isNpcModLoad() {
+        return Loader.isModLoaded("customnpcs");
     }
 }
