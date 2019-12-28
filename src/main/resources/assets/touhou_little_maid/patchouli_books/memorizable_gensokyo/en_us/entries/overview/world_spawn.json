@@ -6,20 +6,20 @@
   "pages": [
     {
       "type": "text",
-      "text": "This mod adds two new mobs and one villager profession.  $(br2)New mobs drop important resources, and the new villager sells some items from this mod. $(br2) [Not reviewed] The chance of spawn hostile creatures in this mod can be modified in the configuration file. When set to 0, these monsters can be prohibited from spawn."
+      "text": "This mod adds two new mobs and one villager profession.  $(br2)New mobs drop important resources, and the new villager sells some items from this mod. $(br2) [Not reviewed] The chance of spawn hostile creatures in this mod can be modified in the configuration file. When set to 0, these monsters will not spawn."
     },
     {
       "type": "entity",
       "entity": "touhou_little_maid:entity.monster.fairy{OnGround:true}",
       "offset": 0.125,
-      "text": "Spawned in plain biome during night, they will attack players and maids with flying bullets hell (danmaku).",
+      "text": "Spawns in plains biomes at night, they will attack players and maids with danmaku.",
       "anchor": "fairy"
     },
     {
       "type": "entity",
       "entity": "touhou_little_maid:entity.monster.rinnosuke",
       "offset": 0.125,
-      "text": "Spawned in forest boime during night, they will attack players and maids.",
+      "text": "Spawns in forest biomes at night, they will attack players and maids.",
       "anchor": "rinnosuke"
     },
     {

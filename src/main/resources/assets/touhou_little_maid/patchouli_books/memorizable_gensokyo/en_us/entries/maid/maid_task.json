@@ -6,19 +6,19 @@
   "pages": [
     {
       "type": "text",
-      "text": "To the left of Maid GUI is a list of available tasks of that maid. Here are explanations of them: $(li)Sitting (Idle?): The default task; maids will sit in-place and do nothing. $(li)Attack: requiring a sword (weapon?) being placed in maids' main hand; maids will seek and attack hositile mobs just as a tamed wolf."
+      "text": "To the left of the Maid GUI is a list of available tasks for that maid. Here are explanations of them: $(li)Sitting: The default task; maids will sit in-place and do nothing. $(li)Attack: requires a weapon to be placed in the maid's main hand; maids will seek and attack hostile mobs like a tamed wolf."
     },
     {
       "type": "text",
-      "text": "$(li)Archer: requiring a bow being placed in maids' main hand and arrows in maids' inventory; maids will seek and attack hositile mobs using bow instead. $(li)Danmaku/Bullet Hell/Shooter: requring a Gohei being placed in maids' main hand; maids will seek and attack hositile mobs using the Gohei. The amount of bullets depends on the amount of mobs surrounding the maid. $(li)Farm(er): maids will plant seeds in their inventory onto farmlands nearby and seek matured crops to harvest them. "
+      "text": "$(li)Archer: requires a bow to be placed in the maid's main hand and arrows in the maid's inventory; maids will seek and attack hostile mobs using the bow. $(li)Danmaku/Bullet Hell/Shooter: requires a Gohei to be placed in the maid's main hand; maids will seek and attack hostile mobs using the Gohei. The amount of bullets depends on the amount of mobs surrounding the maid. $(li)Farm(er): maids will plant seeds in their inventory onto farmland nearby and harvest nearby mature crops. "
     },
     {
       "type": "text",
-      "text": "$(li)Sugarcane: plants and harvests sugarcanes.$(li)Melons: harvest watermelons and pumpkins.$(li)Cocoa: plant and harvest cocoas.$(li)Grass: clean weeds and flowers around them.$(li)Feed: maids will auto feed owner/master player using foods in their inventory if owner/master is low on hunger value. "
+      "text": "$(li)Sugarcane: plants and harvests sugarcanes.$(li)Melons: harvest watermelons and pumpkins.$(li)Cocoa Beans: plant and harvest cocoa beans.$(li)Grass: clean weeds and flowers around them.$(li)Feed: maids will auto feed their master using foods in their inventory if they are low on hunger."
     },
     {
       "type": "text",
-      "text": "$(li)Shearer: requiring a shear being placed in maids' main hand; maids will seek sheeps and shear wools if possible. $(li)Torch (Pathfinder?): requiring torches in maids' inventory; maids will place torches at dark spots. $(li)Breeder: maids will breed animals using approporiate items in their inventory, if available. "
+      "text": "$(li)Shearer: requires shears to be placed in the maid's main hand; maids will seek sheep and shear them if possible. $(li)Torch (Pathfinder?): requires torches in the maid's inventory; maids will place torches at dark spots. $(li)Breeder: maids will breed animals using appropriate items in their inventory, if available. "
     }
   ]
 }

@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "text",
-      "text": "There are various configurable values abuot maids. You can enable/disable each mode of the maids, changing certain attributes, or even adjust the maximum number of maids that can be tamed by the player."
+      "text": "There are various configurable values about maids. You can enable and disable each mode of the maids, change certain attributes, or even adjust the maximum number of maids that can be tamed by the player."
     }
   ]
 }

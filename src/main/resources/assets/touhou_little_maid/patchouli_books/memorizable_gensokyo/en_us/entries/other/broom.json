@@ -7,7 +7,7 @@
     {
       "type": "spotlight",
       "item": "touhou_little_maid:marisa_broom",
-      "text": "Marisa's Broom is a convenient flying vehicle (?). After mounting on the broom by right-clicking, you can control your motion in the same way as of riding on horse. $(br2)Maids will auto mount onto broom if they are closed to them. Maids on brooms will also tend to fly in the sky. "
+      "text": "Marisa's Broom is a convenient flying device. After mounting the broom by right-clicking, you can control your motion in the same way as riding a horse. $(br2)Maids will auto mount onto brooms if they are close by. Maids on brooms will also tend to fly in the sky. "
     },
     {
       "type": "image",

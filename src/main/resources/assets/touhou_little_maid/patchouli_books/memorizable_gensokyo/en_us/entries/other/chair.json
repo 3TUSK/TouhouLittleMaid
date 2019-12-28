@@ -7,10 +7,10 @@
     {
       "type": "crafting",
       "recipe": "touhou_little_maid:chair",
-      "text": "Cushions are decorative items. Right clicking can place them on the ground. Leftclicking a placed cushion will break it, and rightclicking will let you sit on it. You can change its apparance by shift-rightclicking placed cushion and adjust settings in the pop-up GUI."
+      "text": "Cushions are decorative items. Right clicking can place them on the ground. Left-clicking a placed cushion will break it, and right-clicking will let you sit on it. You can change its appearance by shift-right-clicking a placed cushion and adjusting the settings in the pop-up GUI."
     }, {
       "type": "text",
-      "text": "Maids will auto sit on some of cushions. To let maids stand up, right click those maids. $(br2)You can add new cushion models as well. For further details, refer to $(l:https://github.com/TartaricAcid/TouhouLittleMaid/wiki/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9D%90%E5%9E%AB%E6%A8%A1%E5%9E%8B%E8%AF%B4%E6%98%8E)the wiki$()."
+      "text": "Maids will automatically sit on some cushions. To make them stand up, right click those maids. $(br2)You can add new cushion models as well. For further details, refer to $(l:https://github.com/TartaricAcid/TouhouLittleMaid/wiki/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9D%90%E5%9E%AB%E6%A8%A1%E5%9E%8B%E8%AF%B4%E6%98%8E)the wiki$()."
     }
   ]
 }
